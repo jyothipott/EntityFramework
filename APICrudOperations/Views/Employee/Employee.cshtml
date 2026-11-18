@@ -1,0 +1,22 @@
+@model APICrudOperations.Model.Employee
+
+@using (Html.BeginForm("AddEmployee", "Employee", FormMethod.Post))
+{
+    @Html.Label("Enter Employee Number")
+    @Html.TextBoxFor(model => model.Eno)
+    <br />
+
+    @Html.Label("Enter Employee Name")
+    @Html.TextBoxFor(model => model.Ename)
+    <br />
+
+    @Html.Label("Enter Employee Salary")
+    @Html.TextBoxFor(model => model.Salary)
+    <br />
+
+    @Html.Label("Enter Employee Department")
+    @Html.TextBoxFor(model => model.Dept)
+    <br />
+
+    <input type="submit" value="Submit" />
+}
